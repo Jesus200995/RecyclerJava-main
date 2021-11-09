@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:textSize="34dp"
+          android:foregroundGravity="center"
+          android:gravity="center"
+          android:text="Tienda de Lenguajes para Programadores"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:textColor="#FF5722"
+          android:textColorHint="@color/purple_200"
+
+      />
+
+
+   </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+
+         <Button
+             android:id="@+id/btnList"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.9"
+             android:onClick="onClick"
+             android:outlineAmbientShadowColor="@color/teal_200"
+             android:outlineSpotShadowColor="@color/black"
+             android:text="List"
+             android:textColor="#00BCD4"
+             android:textColorHighlight="@color/black"
+             android:textColorLink="@color/material_on_surface_stroke" />
+
+         <Button
+             android:id="@+id/btnGrid"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:onClick="onClick"
+             android:outlineAmbientShadowColor="@color/teal_200"
+             android:outlineSpotShadowColor="@color/black"
+             android:text="Grid"
+             android:textColor="#00BCD4"
+             android:textColorHighlight="@color/black"
+             android:textColorLink="@color/material_on_surface_stroke" />
+
+
+      </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/listado"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>
